@@ -1,5 +1,5 @@
 TARGET = cpld-control
-LIBS = -lftdi
+LIBS = -lftdi1
 
 all: $(TARGET)
 
