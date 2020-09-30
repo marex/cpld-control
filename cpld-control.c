@@ -14,11 +14,13 @@
  * $ echo "5-1.2.3:1.0" > /sys/bus/usb/drivers/ftdi_sio/bind
  */
 #include <errno.h>
-#include <ftdi.h>
+#include <libftdi1/ftdi.h>
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 #define PIN_TX  0x01
 #define PIX_RX  0x02
